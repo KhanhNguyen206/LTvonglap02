@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BT4</title>
+</head>
+<body>
+<script>
+    let x= parseInt(prompt("Nhập vào đây chiều rộng hình chữ nhật:"));
+    let y= parseInt(prompt("Nhập vào đây chiều dài hình chữ nhật"));
+    let bang="<table>";
+    for(let i=1; i<=y; i++){
+        bang=bang+"<tr>";
+        for(let j=1; j<=x; j++){
+            if(i>=2 && j>=2 && i<y && j<x){
+                bang=bang+"<td>" +" "+ "</td>";
+            }else{
+                bang=bang+"<td>" +"*"+ "</td>";
+            }
+        }
+    }
+    document.write(bang);
+</script>
+</body>
+</html>
